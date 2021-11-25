@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.pokedex {
+    align-items: flex-end;
+    display: flex;
+    height: 500px;
+    margin: 50px;
+    width: 800px;
+}
+
+.left_container,
+.right_container {
+    border: 3px solid black;
+    width: 500px;
+}
+
+.right_container {
+    border-left: none;
+}
+
+.left_container {
+    background: rebeccapurple;
+    height: 100%;
+    width: calc(50% + 50px);
+}  
+
+.left_container_top_section {
+    border-bottom: 3px solid black;
+    display: flex;
+    height: 50px;
+    padding: 8px;
+}
+
+.top_section_blue {
+    background: radial-gradient(farthest-corner at 10px 10px,  white, royalblue, royalblue);
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+    height: 30px;
+    width: 30px;
+}
+
+.top_section_small_buttons {
+    display: flex;
+    margin: 0 30px;
+}
+
+.top_section_red,
+.top_section_yellow,
+.top_section_green {
+border-radius: 50%;
+border: 1px solid black;
+height: 15px;
+margin-right: 10px;
+width: 15px;
+}
+
+.top_section_red {
+    background: rgb(175, 28, 28);
+}
+    
+.top_section_yellow {
+    background: rgb(233, 233, 15);
+}
+    
+.top_section_green {
+    background: rgb(78, 202, 78);
+}
+    
+.left_container_main_section_container {
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+.left_container_main_section {
+    height: 100%;
+    padding: 25px;
+    width: 500px;
+}
+
+.main_section_white {
+    background: whitesmoke;
+    border: 3px solid black;
+    height: 325px;
+    box-shadow: inset 0 0 3px 3px rgba(37, 36, 36, 0.5);
+}
+
+.main_section_black {
+    background: black;
+    height: calc(100% - 50px);
+    margin: 25px;
+    padding: 10px;
+    width: calc(100% - 50px);
+}
+
+.main_screen {
+    border-radius: 25px;
+    height: 100%;
+    padding: 15px;
+}
+
+.screen_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.poke_name {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.poke_id {
+    color: rgb(248, 244, 244);
+    font-size: large;
+}
+
+.screen_image {
+    display: flex;
+    justify-content: space-around;
+}
+
+.poke_front_image, 
+.poke_back_image {
+    width: 90px;
+    height: 90px;
+}
+
+.screen_description {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.screen_stats {
+    background: rgba(0,0,0,.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+
+.poke_types {
+    height: 100%;
+    padding: 5px;
+}
+
+.poke_type_one, 
+.poke_type_two {
+    background: rgba(255,255,255,.3);
+    /* background: silver; */
+    border-radius: 25px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.left_container_controllers {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 25px 0;
+}
+    
+.controllers_d_pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+    
+.d_pad_cell {
+    background: black;
+    box-shadow: 0 0 2px 2px rgba(0,0,0, .3);
+    height: 25px;
+    width: 25px;
+}
+    
+.d_pad_cell.top {
+    border-left: 1px solid dimgrey;
+    border-radius: 5px 5px 0 0;
+    border-right: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+    
+.d_pad_cell.left {
+    border-bottom: 1px solid dimgrey;
+    border-left: 1px solid dimgrey;
+    border-radius: 5px 0 0 5px;
+    border-top: 1px solid dimgrey;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+    
+.d_pad_cell.middle {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+    
+.d_pad_cell.right {
+    border-bottom: 1px solid dimgrey;
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+    
+.d_pad_cell.bottom {
+    border-bottom: 1px solid dimgrey;
+    border-left: 1px solid dimgrey;
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid dimgrey;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.controllers__buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.buttons__button {
+    align-items: center;
+    background: black;
+    border-radius: 50%;
+    border: 1px solid dimgrey;
+    box-shadow: 0 0 3px 3px rgb(68, 64, 64);
+    color: white;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    width: 35px;
+}
+
+.buttons__button:first-child {
+    margin-top: 5px;
+}
+    
+.buttons__button:last-child {
+    margin-top: -5px;
+}
+
+.left_container_right {
+    border-left: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.left_container_hinge {
+    background: linear-gradient(to right, #760b91, #ac45a7, #ac45a7, #760b91);
+    height: 75px;
+    width: 100%;
+}
+
+.right_container {
+    background: rgb(117, 45, 189);
+    height: calc(100% - 50px);
+    padding: 25px;
+    width: calc(50% - 50px);
+}
+
+.right_container_black {
+    background: black;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+    height: 300px;
+    padding: 10px;
+}
+    
+.right_container_screen {
+    background: #808185;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 15px 15px 0;
+}
+
+.list-item {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    height: 25px;
+    overflow-x: hidden;
+    padding-left: 5px;
+    width: 50%;
+}
+
+.list-item:hover {
+    background: #da37b1;
+    color: black;
+}
+
+.list-item:active {
+    background: #733df0;
+    color: white;
+}
+
+.right_container_buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.left_button,
+.right_button {
+align-items: center;
+background: silver;
+border-radius: 3px;
+border: 2px solid black;
+box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+display: flex;
+font-weight: bold;
+height: 30px;
+justify-content: center;
+text-transform: uppercase;
+width: 100px;
+}
+
+.hide {
+display: none;
+}
+
+.normal {
+background: #BABAAE;
+}
+
+.fighting {
+background: #A75543;
+}
+
+.flying {
+background: #78A2FF;
+}
+
+.poison {
+background: #A95CA0;
+}
+
+.ground {
+background: #EECC55;
+}
+
+.rock {
+background: #CCBD72;
+}
+
+.bug {
+background: #C2D21E;
+}
+
+.ghost {
+background: #7975D7;
+}
+
+.steel {
+background: #C4C2DB;
+}
+
+.fire {
+background: #FA5643;
+}
+
+.water {
+background: #56ADFF;
+}
+
+.grass {
+background: #8CD750;
+}
+
+.electric {
+background: #FDE139;
+}
+
+.psychic {
+background: #FA65B4;
+}
+
+.ice {
+background: #96F1FF;
+}
+
+.dragon {
+background: #8673FF;
+}
+
+.dark {
+background: #8D6855;
+}
+
+.fairy {
+background: #F9AEFF;
+}

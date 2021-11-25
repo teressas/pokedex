@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  <title>Pokedex</title>
+</head>
+<body>
+  <div class="pokedex">
+    <div class="left_container">
+      <div class="left_container_top_section">
+        <div class="top_section_blue"></div>
+        <div class="top_section_small_buttons">
+          <div class="top_section_red"></div>
+          <div class="top_section_yellow"></div>
+          <div class="top_section_green"></div>
+        </div>
+      </div>
+      <div class="left_container_main_section_container">
+        <div class="left_container_main_section">
+          <div class="main_section_white">
+            <div class="main_section_black">
+              <div class="main_screen hide">
+                <div class="screen_header">
+                  <span class="poke_name"></span>
+                  <span class="poke_id"></span>
+                </div>
+                <div class="screen_image">
+                  <img src="" class="poke_front_image" alt="front">
+                  <img src="" class="poke_back_image" alt="back">
+                </div>
+                <div class="screen_description">
+                  <div class="poke_types">
+                    <span class="poke_type_one"></span>
+                    <span class="poke_type_two"></span>
+                  </div>
+                  <div class="screen_stats">
+                    <p class="stats_weight">
+                      Weight: <span class="poke_weight"></span>
+                    </p>
+                    <p class="stats_height">
+                      Height: <span class="poke_height"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left_container_controllers">
+            <div class="controllers_d_pad">
+              <div class="d_pad_cell top"></div>
+              <div class="d_pad_cell left"></div>
+              <div class="d_pad_cell middle"></div>
+              <div class="d_pad_cell right"></div>
+              <div class="d_pad_cell bottom"></div>
+            </div>
+            <div class="controllers__buttons">
+              <div class="buttons__button"></div>
+              <div class="buttons__button"></div>
+            </div>
+          </div>
+        </div>
+        <div class="left_container_right">
+          <div class="left_container_hinge"></div>
+          <div class="left_container_hinge"></div>
+        </div>
+      </div>
+    </div>
+    <div class="right_container">
+      <div class="right_container_black">
+        <div class="right_container_screen">
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+          <div class="list-item"></div>
+        </div>
+      </div>
+      <div class="right_container_buttons">
+        <div class="left_button">Prev</div>
+        <div class="right_button">Next</div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="{{url_for('static',filename='js/app.js')}}"></script>
+</body>
+</html>
